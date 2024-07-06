@@ -1,4 +1,4 @@
-//Sat Jul 06 2024 01:11:28 GMT+0000 (Coordinated Universal Time)
+//Sat Jul 06 2024 01:13:38 GMT+0000 (Coordinated Universal Time)
 //Base:https://github.com/echo094/decode-js
 //Modify:https://github.com/smallfawn/decode_action
 let mode = __dirname.includes("magic");
@@ -1213,7 +1213,9 @@ class Env {
             JSON[ll11l1i(0xa77, 'NmEP')](lli11ii)[ll11l1i(0x74f, 'u6*3')](illiII1 => {
               const lIl1l1Il = ll11l1i;
               this[lIl1l1Il(0xf6b, 'f^kx')][illiII1[lIl1l1Il(0x11d, 'X4gc')]] = illiII1;
-              illiII1?.[lIl1l1Il(0xfdc, 'NmEP')] && this[lIl1l1Il(0x76d, 'ib%j')][lIl1l1Il(0xf1d, '&L9J')](illiII1?.[lIl1l1Il(0x290, '3xlC')]);
+              if (illiII1?.[lIl1l1Il(0xfdc, 'NmEP')]) {
+                this[lIl1l1Il(0x76d, 'ib%j')][lIl1l1Il(0xf1d, '&L9J')](illiII1?.[lIl1l1Il(0x290, '3xlC')]);
+              }
             });
           }
         } catch (iI1IiliI) {
@@ -1568,7 +1570,9 @@ class Env {
                     }
                   }
                 };
-                llIIliIi[ll11l1i(0xdce, '8%2W')](lllIll?.[ll11l1i(0x572, '6oMp')](llIIliIi[ll11l1i(0x1234, 'cG3!')]), -0x1) && delete IIili1[ll11l1i(0x37f, 'eOf)')][ll11l1i(0xa36, 'jhaI')][ll11l1i(0xe5c, 'cGoW')];
+                if (llIIliIi[ll11l1i(0xdce, '8%2W')](lllIll?.[ll11l1i(0x572, '6oMp')](llIIliIi[ll11l1i(0x1234, 'cG3!')]), -0x1)) {
+                  delete IIili1[ll11l1i(0x37f, 'eOf)')][ll11l1i(0xa36, 'jhaI')][ll11l1i(0xe5c, 'cGoW')];
+                }
                 return l11lIIi1[ll11l1i(0xdcc, 'e2U6')](IIili1);
               } else {
                 this[ll11l1i(0xdf4, 'mxZI')][ll11l1i(0x304, 'CaEB')](ll11l1i(0x1115, 'b2Nu') + this[ll11l1i(0x967, 'pn2b')] + '_' + this[ll11l1i(0x1211, 'cG3!')]);
@@ -1588,7 +1592,10 @@ class Env {
               this[ll11l1i(0xbc1, 'ZqBj')][ll11l1i(0x185, 'tM8T')](ll11l1i(0x642, 'hOdi') + (this[ll11l1i(0x63c, ')gIz')] || '') + '至' + (this[ll11l1i(0xdc5, 'DUG5')] || ''));
             }
             await this[ll11l1i(0x221, 'pY)i')]();
-            (this[ll11l1i(0x1012, '8%2W')] || this[ll11l1i(0x10ac, 'G^N$')] || this[ll11l1i(0xcb5, '3xlC')]) && (this[ll11l1i(0x612, 'ki$H')][ll11l1i(0x905, 'CyXP')](''), this[ll11l1i(0x21c, 'pY)i')][ll11l1i(0x12af, 'DUG5')](ll11l1i(0x1143, 'X4gc') + (this[ll11l1i(0x3a8, 'cG3!')] || this[ll11l1i(0x51b, 'Ni^S')] || this[ll11l1i(0xb61, 'b2Nu')] || '')));
+            if (this[ll11l1i(0x1012, '8%2W')] || this[ll11l1i(0x10ac, 'G^N$')] || this[ll11l1i(0xcb5, '3xlC')]) {
+              this[ll11l1i(0x612, 'ki$H')][ll11l1i(0x905, 'CyXP')]('');
+              this[ll11l1i(0x21c, 'pY)i')][ll11l1i(0x12af, 'DUG5')](ll11l1i(0x1143, 'X4gc') + (this[ll11l1i(0x3a8, 'cG3!')] || this[ll11l1i(0x51b, 'Ni^S')] || this[ll11l1i(0xb61, 'b2Nu')] || ''));
+            }
           }
         } catch (lliiiIl) {
           this[ll11l1i(0x27d, 'b2Nu')](llIIliIi[ll11l1i(0x3e6, 'u6*3')](llIIliIi[ll11l1i(0xf63, 'jhsG')], lliiiIl[ll11l1i(0x766, 'cVXF')]));
@@ -2326,8 +2333,12 @@ class Env {
         if (Ilii1i1l[llI11i1(0x1417, '8%2W')](/strPgUUNum=(.*?)&/)) {
           if (i1Ii1IlI[llI11i1(0x123c, 'eOf)')](i1Ii1IlI[llI11i1(0x1333, 'Ni^S')], i1Ii1IlI[llI11i1(0x508, 'CaEB')])) {
             Ilii1i1l = Ilii1i1l[llI11i1(0x7ee, 'ib%j')](Ilii1i1l[llI11i1(0x11f4, ']NsU')](/strPgUUNum=(.*?)&/)[0x1], iIlliIl['tk']);
-            Ilii1i1l[llI11i1(0xa58, '!CT4')](/strPhoneID=(.*?)&/) && (Ilii1i1l = Ilii1i1l[llI11i1(0x6a1, 'u6*3')](Ilii1i1l[llI11i1(0xf4a, 'ib%j')](/strPhoneID=(.*?)&/)[0x1], iIlliIl['id']));
-            Ilii1i1l[llI11i1(0x22e, 'jhaI')](/strPgtimestamp=(.*?)&/) && (Ilii1i1l = Ilii1i1l[llI11i1(0x10ca, 'Vd1L')](Ilii1i1l[llI11i1(0x1417, '8%2W')](/strPgtimestamp=(.*?)&/)[0x1], iIlliIl['ts']));
+            if (Ilii1i1l[llI11i1(0xa58, '!CT4')](/strPhoneID=(.*?)&/)) {
+              Ilii1i1l = Ilii1i1l[llI11i1(0x6a1, 'u6*3')](Ilii1i1l[llI11i1(0xf4a, 'ib%j')](/strPhoneID=(.*?)&/)[0x1], iIlliIl['id']);
+            }
+            if (Ilii1i1l[llI11i1(0x22e, 'jhaI')](/strPgtimestamp=(.*?)&/)) {
+              Ilii1i1l = Ilii1i1l[llI11i1(0x10ca, 'Vd1L')](Ilii1i1l[llI11i1(0x1417, '8%2W')](/strPgtimestamp=(.*?)&/)[0x1], iIlliIl['ts']);
+            }
           } else {
             let ii1lIi1l = llIli1l[llI11i1(0x1306, '3xlC')](':');
             IIililI[llI11i1(0x9ad, 'o!gR')][llI11i1(0x12c5, ')gIz')] = ![];
@@ -2335,7 +2346,9 @@ class Env {
               'host': ii1lIi1l[0x0],
               'port': ii1lIi1l[0x1]
             };
-            I1Ii1iIi && (Iliilil1[llI11i1(0x175, 'cpXz')] = i1i1lIll);
+            if (I1Ii1iIi) {
+              Iliilil1[llI11i1(0x175, 'cpXz')] = i1i1lIll;
+            }
             I1i1i11l[llI11i1(0x1314, 'cGoW')][llI11i1(0x12cd, 'ub5(')] = iililiII[llI11i1(0x496, 'o*H9')]({
               'proxy': Iliilil1
             });
@@ -2346,8 +2359,12 @@ class Env {
         }
         if (Ilii1i1l[llI11i1(0x22e, 'jhaI')](/jxmc_jstoken=(.*?)&/)) {
           Ilii1i1l = Ilii1i1l[llI11i1(0xb79, 'jhaI')](Ilii1i1l[llI11i1(0xc4a, 'o!gR')](/jxmc_jstoken=(.*?)&/)[0x1], iIlliIl['tk']);
-          Ilii1i1l[llI11i1(0x142d, 'hOdi')](/phoneid=(.*?)&/) && (i1Ii1IlI[llI11i1(0x11ea, 'pY)i')](i1Ii1IlI[llI11i1(0x234, 'xQbR')], i1Ii1IlI[llI11i1(0x701, 'ib%j')]) ? iIIiiI11 = i1Ii1IlI[llI11i1(0xa7d, 'tM8T')](i1Ii1IlI[llI11i1(0x7f0, 'u6*3')](i1lIlll1[llI11i1(0x7eb, 'cpXz')], 0x1), i1Ii1IlI[llI11i1(0x8e8, 'CyXP')]) : Ilii1i1l = Ilii1i1l[llI11i1(0x12fe, 'pn2b')](Ilii1i1l[llI11i1(0x4dd, 'o*H9')](/phoneid=(.*?)&/)[0x1], iIlliIl['id']));
-          Ilii1i1l[llI11i1(0x4e9, 'pn2b')](/timestamp=(.*?)&/) && (Ilii1i1l = Ilii1i1l[llI11i1(0x870, 'Ni^S')](Ilii1i1l[llI11i1(0x4dd, 'o*H9')](/timestamp=(.*?)&/)[0x1], iIlliIl['ts']));
+          if (Ilii1i1l[llI11i1(0x142d, 'hOdi')](/phoneid=(.*?)&/)) {
+            i1Ii1IlI[llI11i1(0x11ea, 'pY)i')](i1Ii1IlI[llI11i1(0x234, 'xQbR')], i1Ii1IlI[llI11i1(0x701, 'ib%j')]) ? iIIiiI11 = i1Ii1IlI[llI11i1(0xa7d, 'tM8T')](i1Ii1IlI[llI11i1(0x7f0, 'u6*3')](i1lIlll1[llI11i1(0x7eb, 'cpXz')], 0x1), i1Ii1IlI[llI11i1(0x8e8, 'CyXP')]) : Ilii1i1l = Ilii1i1l[llI11i1(0x12fe, 'pn2b')](Ilii1i1l[llI11i1(0x4dd, 'o*H9')](/phoneid=(.*?)&/)[0x1], iIlliIl['id']);
+          }
+          if (Ilii1i1l[llI11i1(0x4e9, 'pn2b')](/timestamp=(.*?)&/)) {
+            Ilii1i1l = Ilii1i1l[llI11i1(0x870, 'Ni^S')](Ilii1i1l[llI11i1(0x4dd, 'o*H9')](/timestamp=(.*?)&/)[0x1], iIlliIl['ts']);
+          }
         }
       } else {
         return i1Ii1IlI[llI11i1(0x80f, '@rdD')](llI1IIIi, i1Ii1IlI[llI11i1(0xf6, '8vEZ')](typeof I11iiIlI, i1Ii1IlI[llI11i1(0x784, 'NmEP')]) ? iiiiiIil : new l1iillli(i1Ii1IlI[llI11i1(0x1131, 'f^kx')](typeof IlI1llii, i1Ii1IlI[llI11i1(0x79d, 'ib%j')]) ? i1Ii1IlI[llI11i1(0x426, 'l26R')](IiilIIlI, 0x1) : lilIllIi), i1Ii1IlI[llI11i1(0x659, 'ki$H')](i11lII1i, i1Ii1IlI[llI11i1(0x1219, '^i7G')]));
@@ -2699,8 +2716,12 @@ class Env {
     for (let i11lIili of liiil11i[iIII1l1I(0x574, 'mxZI')](IliIIl1l => IliIIl1l[iIII1l1I(0x4a8, '&L9J')] === 0x0 && (IliIIl1l[iIII1l1I(0x1021, 'cG3!')] < IliIIl1l[iIII1l1I(0x770, 'ki$H')] || IliIIl1l[iIII1l1I(0xc8e, 'ib%j')] < IliIIl1l[iIII1l1I(0x135, 'eOf)')])) || []) {
       if (liiilI[iIII1l1I(0x122c, 'CaEB')](liiilI[iIII1l1I(0x680, 'e2U6')], liiilI[iIII1l1I(0x1258, 'cVXF')])) {
         I1ilI11l = iiIiIi1l[iIII1l1I(0x136f, 'cGoW')](Ii11i111[iIII1l1I(0x3a4, '6oMp')](/jxmc_jstoken=(.*?)&/)[0x1], IIIIII1['tk']);
-        lil1li1i[iIII1l1I(0x52d, 'tM8T')](/phoneid=(.*?)&/) && (illiI1II = l11Ii1Il[iIII1l1I(0x582, 'X4gc')](IIi1iliI[iIII1l1I(0x52d, 'tM8T')](/phoneid=(.*?)&/)[0x1], iI1IIiIi['id']));
-        i1Ii1i1l[iIII1l1I(0x1205, 'ub5(')](/timestamp=(.*?)&/) && (llIIlI = iIil1iI[iIII1l1I(0x119f, 'Mc8m')](I1i1Illl[iIII1l1I(0x386, 'DUG5')](/timestamp=(.*?)&/)[0x1], il1lIlIl['ts']));
+        if (lil1li1i[iIII1l1I(0x52d, 'tM8T')](/phoneid=(.*?)&/)) {
+          illiI1II = l11Ii1Il[iIII1l1I(0x582, 'X4gc')](IIi1iliI[iIII1l1I(0x52d, 'tM8T')](/phoneid=(.*?)&/)[0x1], iI1IIiIi['id']);
+        }
+        if (i1Ii1i1l[iIII1l1I(0x1205, 'ub5(')](/timestamp=(.*?)&/)) {
+          llIIlI = iIil1iI[iIII1l1I(0x119f, 'Mc8m')](I1i1Illl[iIII1l1I(0x386, 'DUG5')](/timestamp=(.*?)&/)[0x1], il1lIlIl['ts']);
+        }
       } else {
         try {
           if ([0x1, 0x2, 0x4, 0xa, 0xc, 0xe][iIII1l1I(0x2b0, 'ZqBj')](i11lIili[iIII1l1I(0x15b, 'NmEP')])) {
@@ -5181,7 +5202,10 @@ class Env {
           lI11i1 = l11iiIll[illIlIli(0x6a1, 'u6*3')](iI11l1i1[illIlIli(0x5a7, 'CaEB')](/timestamp=(.*?)&/)[0x1], IiiI1Il['ts']);
         }
       }
-      (lIi1II1[illIlIli(0xfa7, '^i7G')](II1lI1li[illIlIli(0x8c1, 's7!W')]) || lIi1II1[illIlIli(0x1188, 'G^N$')](II1lI1li[illIlIli(0xc2, 'hOdi')])) && (this[illIlIli(0x64a, 'eTN8')](illIlIli(0x1022, '!CT4')), this[illIlIli(0x11d7, 'eOf)')] = !![]);
+      if (lIi1II1[illIlIli(0xfa7, '^i7G')](II1lI1li[illIlIli(0x8c1, 's7!W')]) || lIi1II1[illIlIli(0x1188, 'G^N$')](II1lI1li[illIlIli(0xc2, 'hOdi')])) {
+        this[illIlIli(0x64a, 'eTN8')](illIlIli(0x1022, '!CT4'));
+        this[illIlIli(0x11d7, 'eOf)')] = !![];
+      }
       return i11lli1l;
     } catch (IiilIl) {
       if (II1lI1li[illIlIli(0x2ec, '6oMp')](ii111II1, 0x3)) {
@@ -5241,7 +5265,9 @@ class Env {
         }
       }
     };
-    lliiilii[llIliiil(0x90c, '&L9J')](Iiiilili?.[llIliiil(0x1329, 's7!W')](lliiilii[llIliiil(0xe69, 's7!W')]), -0x1) && delete iliIlii[llIliiil(0xeba, '@rdD')][llIliiil(0x559, 'BEvU')][llIliiil(0x940, 'CaEB')];
+    if (lliiilii[llIliiil(0x90c, '&L9J')](Iiiilili?.[llIliiil(0x1329, 's7!W')](lliiilii[llIliiil(0xe69, 's7!W')]), -0x1)) {
+      delete iliIlii[llIliiil(0xeba, '@rdD')][llIliiil(0x559, 'BEvU')][llIliiil(0x940, 'CaEB')];
+    }
     return JSON[llIliiil(0x913, 'cG3!')](iliIlii);
   }
   [l1lI1liI(0x7cd, 'pn2b')](I1I1lI1l) {
@@ -5400,7 +5426,9 @@ class Env {
     if ([ililIII[iiiIiiil(0x2f3, 'o!gR')]][iiiIiiil(0x973, 'u6*3')](IiIlI111)) {
       let lIi1l1li = ililIII[iiiIiiil(0x8e1, 'BEvU')](parseInt, M_WX_ADDRESS_RANGE?.[iiiIiiil(0xcd6, 'o!gR')]('-')?.[0x0] || 0x1),
         iIIiIIli = Math[iiiIiiil(0xcab, '8%2W')](ililIII[iiiIiiil(0x423, 'tM8T')](parseInt, M_WX_ADDRESS_RANGE?.[iiiIiiil(0x413, 'CaEB')]('-')?.[0x1] || i1iIi11I[iiiIiiil(0x13dc, 'u6*3')]), i1iIi11I[iiiIiiil(0x782, ']NsU')]);
-      ililIII[iiiIiiil(0xfe9, 'ub5(')](this[iiiIiiil(0xf2d, 'l26R')], iIIiIIli) && (this[iiiIiiil(0xa89, 'pn2b')] = 0x1);
+      if (ililIII[iiiIiiil(0xfe9, 'ub5(')](this[iiiIiiil(0xf2d, 'l26R')], iIIiIIli)) {
+        this[iiiIiiil(0xa89, 'pn2b')] = 0x1;
+      }
       iliI11il = i1iIi11I[ililIII[iiiIiiil(0x39d, 's7!W')](this[iiiIiiil(0xfdf, ')W34')], 0x1)];
     }
     if (iliI11il) {
@@ -6177,7 +6205,9 @@ class Env {
             'Origin': iiI1ili[i1IIIiiI(0x12e5, ')gIz')],
             'Cookie': IliI1Ill
           }, iIi1Iii);
-        iiI1ili[i1IIIiiI(0x953, 'e2U6')](liliiiil?.[i1IIIiiI(0x1050, 'u6*3')]?.[i1IIIiiI(0x275, 'pY)i')]?.[i1IIIiiI(0x1056, 's7!W')], 0x1) && this[i1IIIiiI(0x14f, ']NsU')](iiI1ili[i1IIIiiI(0xe6f, 'NmEP')](iil11iI, iiI1ili[i1IIIiiI(0x212, 'xQbR')]));
+        if (iiI1ili[i1IIIiiI(0x953, 'e2U6')](liliiiil?.[i1IIIiiI(0x1050, 'u6*3')]?.[i1IIIiiI(0x275, 'pY)i')]?.[i1IIIiiI(0x1056, 's7!W')], 0x1)) {
+          this[i1IIIiiI(0x14f, ']NsU')](iiI1ili[i1IIIiiI(0xe6f, 'NmEP')](iil11iI, iiI1ili[i1IIIiiI(0x212, 'xQbR')]));
+        }
         await this[i1IIIiiI(0x9de, '@rdD')](0x3e8);
         return iiI1ili[i1IIIiiI(0x594, 'ib%j')](liliiiil?.[i1IIIiiI(0x1195, 'DUG5')]?.[i1IIIiiI(0x1369, 'cG3!')]?.[i1IIIiiI(0x94e, 'ZqBj')], 0x1);
       }
@@ -6306,7 +6336,9 @@ class Env {
         }
       } else {
         this[lIli1i1l(0x787, 'b2Nu')][lliIl1i[lIli1i1l(0x98a, ')gIz')]] = Iil1lIil;
-        liIIIIII?.[lIli1i1l(0xf40, '6oMp')] && this[lIli1i1l(0x13a6, 'eOf)')][lIli1i1l(0x26d, 'BEvU')](iI1lI1Ii?.[lIli1i1l(0x7b8, '!CT4')]);
+        if (liIIIIII?.[lIli1i1l(0xf40, '6oMp')]) {
+          this[lIli1i1l(0x13a6, 'eOf)')][lIli1i1l(0x26d, 'BEvU')](iI1lI1Ii?.[lIli1i1l(0x7b8, '!CT4')]);
+        }
       }
     }
   }
@@ -6561,19 +6593,21 @@ class Env {
     }
     const ll1ll1i = (await Promise[iiIIll1I(0x110d, '^i7G')](IlI11II1))[iiIIll1I(0x974, '6oMp')]();
     let ii1IIiiI = ll1ll1i[iiIIll1I(0x13b4, '8%2W')](l1IIiiII => l1IIiiII !== null);
-    lli1IllI && (ii1IIiiI = ii1IIiiI[iiIIll1I(0x57e, 'hOdi')](iIli1iIi => {
-      const I1lliIli = iiIIll1I;
-      try {
-        return l1lll1[I1lliIli(0x432, 'DUG5')](lli1IllI, iIli1iIi);
-      } catch (lIIlll11) {
-        if (l1lll1[I1lliIli(0x140, 'mxZI')](l1lll1[I1lliIli(0x428, '3y6#')], l1lll1[I1lliIli(0x9f6, 'X4gc')])) {
-          this[I1lliIli(0x1165, ']NsU')] = this[I1lliIli(0x58d, '8vEZ')](this[I1lliIli(0x1165, ']NsU')], l1lll1[I1lliIli(0x1004, 'o!gR')]);
-        } else {
-          console[I1lliIli(0x12d4, 'f^kx')](I1lliIli(0x2c0, 'cG3!') + iIli1iIi + I1lliIli(0xe38, 'u6*3') + lIIlll11);
-          return null;
+    if (lli1IllI) {
+      ii1IIiiI = ii1IIiiI[iiIIll1I(0x57e, 'hOdi')](iIli1iIi => {
+        const I1lliIli = iiIIll1I;
+        try {
+          return l1lll1[I1lliIli(0x432, 'DUG5')](lli1IllI, iIli1iIi);
+        } catch (lIIlll11) {
+          if (l1lll1[I1lliIli(0x140, 'mxZI')](l1lll1[I1lliIli(0x428, '3y6#')], l1lll1[I1lliIli(0x9f6, 'X4gc')])) {
+            this[I1lliIli(0x1165, ']NsU')] = this[I1lliIli(0x58d, '8vEZ')](this[I1lliIli(0x1165, ']NsU')], l1lll1[I1lliIli(0x1004, 'o!gR')]);
+          } else {
+            console[I1lliIli(0x12d4, 'f^kx')](I1lliIli(0x2c0, 'cG3!') + iIli1iIi + I1lliIli(0xe38, 'u6*3') + lIIlll11);
+            return null;
+          }
         }
-      }
-    })[iiIIll1I(0x385, 'NmEP')](IIi1l1I1 => IIi1l1I1 !== null));
+      })[iiIIll1I(0x385, 'NmEP')](IIi1l1I1 => IIi1l1I1 !== null);
+    }
     return ii1IIiiI;
   }
   [l1lI1liI(0x332, '&L9J')](il1Ii1l1 = this[l1lI1liI(0x9ea, 'eTN8')]) {
@@ -6603,7 +6637,9 @@ class Env {
         }
       }
     }
-    !IlIII11I && (IlIII11I = this[il1llIli(0xd26, '&L9J')](/\/(dz[a-zA-Z0-9]{28,32})/, il1Ii1l1));
+    if (!IlIII11I) {
+      IlIII11I = this[il1llIli(0xd26, '&L9J')](/\/(dz[a-zA-Z0-9]{28,32})/, il1Ii1l1);
+    }
     this[il1llIli(0x3ab, 'cVXF')] = IlIII11I;
     return this[il1llIli(0x115a, 'tM8T')];
   }
@@ -6719,7 +6755,9 @@ class Env {
     this[lil1iiI1(0x510, 'mxZI')] = this[lil1iiI1(0x121c, 'jhaI')](this[lil1iiI1(0xa4f, '!CT4')], ilIlIII[lil1iiI1(0xa76, 'X4gc')]);
     this[lil1iiI1(0x135b, 'u6*3')] = this[lil1iiI1(0x352, 'ZqBj')](this[lil1iiI1(0xb44, ')gIz')], ilIlIII[lil1iiI1(0x126, ')W34')]) || this[lil1iiI1(0x8ee, 'CyXP')](this[lil1iiI1(0x154, 'cGoW')], ilIlIII[lil1iiI1(0xcf0, 'mxZI')]) || this[lil1iiI1(0x29b, 'NmEP')](/\/m\/(\d+)\//, this[lil1iiI1(0x5c6, 'hOdi')]) || this[lil1iiI1(0x348, '8%2W')](this[lil1iiI1(0xbe3, '^i7G')], ilIlIII[lil1iiI1(0x8f5, 'ZqBj')]);
     this[lil1iiI1(0x12c1, 'jhaI')] = this[lil1iiI1(0xdf9, 'X4gc')];
-    this?.[lil1iiI1(0x5c6, 'hOdi')] && (this[lil1iiI1(0xac0, 'jhsG')] = Object[lil1iiI1(0x1027, '@rdD')](urlPrefixes)[lil1iiI1(0x31d, '8c*(')](III1iIi1 => this[lil1iiI1(0xb44, ')gIz')][lil1iiI1(0x135d, 'mxZI')](urlPrefixes[III1iIi1])) || '');
+    if (this?.[lil1iiI1(0x5c6, 'hOdi')]) {
+      this[lil1iiI1(0xac0, 'jhsG')] = Object[lil1iiI1(0x1027, '@rdD')](urlPrefixes)[lil1iiI1(0x31d, '8c*(')](III1iIi1 => this[lil1iiI1(0xb44, ')gIz')][lil1iiI1(0x135d, 'mxZI')](urlPrefixes[III1iIi1])) || '';
+    }
     console[lil1iiI1(0x522, 'cG3!')](lil1iiI1(0xd5d, 'ib%j') + this[lil1iiI1(0x193, '8c*(')] + '\x20' + this[lil1iiI1(0x97a, 'ZqBj')] + '\x20' + this[lil1iiI1(0x91b, 'ki$H')]);
   }
   async [l1lI1liI(0xff6, 'e2U6')]() {
